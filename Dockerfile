@@ -1,6 +1,7 @@
 FROM phusion/baseimage:0.9.11
 MAINTAINER L3rd
 ENV DEBIAN_FRONTEND noninteractive
+# Based on https://github.com/needo37/plexWatch
 
 # Set correct environment variables
 ENV HOME /root
