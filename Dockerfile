@@ -1,5 +1,5 @@
 FROM phusion/baseimage:0.9.11
-MAINTAINER needo <needo@superhero.org>
+MAINTAINER L3rd
 ENV DEBIAN_FRONTEND noninteractive
 
 # Set correct environment variables
@@ -51,7 +51,7 @@ RUN echo /var/log/apache2 > /etc/container_environment/APACHE_LOG_DIR
 RUN echo /var/lock/apache2 > /etc/container_environment/APACHE_LOCK_DIR
 RUN echo /var/run/apache2.pid > /etc/container_environment/APACHE_PID_FILE
 
-# Cahnged port form 8080 to 8083 to be compatible with unMENU
+# Changed port form 8080 to 8083 to be compatible with unMENU
 EXPOSE 8083
 
 # The plexWatch directory. Where the binary, config, and database is
