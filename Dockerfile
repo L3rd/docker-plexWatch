@@ -52,8 +52,8 @@ RUN echo /var/log/apache2 > /etc/container_environment/APACHE_LOG_DIR
 RUN echo /var/lock/apache2 > /etc/container_environment/APACHE_LOCK_DIR
 RUN echo /var/run/apache2.pid > /etc/container_environment/APACHE_PID_FILE
 
-# Changed port form 8080 to 8083 to be compatible with unMENU
-EXPOSE 8083
+# Changed port form 8080 to 8084 to be compatible with unMENU
+EXPOSE 8084
 
 # The plexWatch directory. Where the binary, config, and database is
 VOLUME /plexWatch
