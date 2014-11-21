@@ -20,7 +20,7 @@ New Installation Instructions
 * Start watching a movie in Plex, leave it running
 * Run the docker in host mode:
 ```
-docker run -d --net="host" --name="plexWatch" -v "/path/to/plexWatch/":"/plexWatch":rw -v "/path/to/plex/logs/":"/logs":ro -v /etc/localtime:/etc/localtime:ro -p 8083:8083 l3rd/plexwatch
+docker run -d --net="host" --name="plexWatch" -v "/path/to/plexWatch/":"/plexWatch":rw -v "/path/to/plex/logs/":"/logs":ro -v /etc/localtime:/etc/localtime:ro -p 8084:8084 l3rd/plexwatch
 ```
 Where: 
    * plexWatch:
@@ -38,7 +38,7 @@ Where:
       - example:  "/mnt/cache/appdata/Plex/Library/Application Support/Plex Media Server/Logs/":"/logs":ro
 
 
-* Try it out: http://server:8083/plexWatch/
+* Try it out: http://server:8084/plexWatch/
 
 If all goes well, plexWatchWeb will load and show you the movie that is currently playing in Plex.
 
@@ -55,7 +55,7 @@ The easiest way to setup the plexWatch docker is to run it in host mode.  But if
 
 Then run the plexWatch docker in bridge mode:
 ```
-docker run -d --net="bridge" --name="plexWatch" -v "/path/to/plexWatch/":"/plexWatch":rw -v "/path/to/plex/logs/":"/logs":ro -v /etc/localtime:/etc/localtime:ro -p 8083:8083 needo/plexwatch
+docker run -d --net="bridge" --name="plexWatch" -v "/path/to/plexWatch/":"/plexWatch":rw -v "/path/to/plex/logs/":"/logs":ro -v /etc/localtime:/etc/localtime:ro -p 8084:8084 l3rd/plexwatch
 ```
 
 Note that Plex itself should still be run in host mode.
